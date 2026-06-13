@@ -1,1 +1,162 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.logo_name {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.media-icons {
+  display: flex;
+}
+
+.media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 6px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.media-icons a:nth-child(1) {
+  background: #4267b2;
+}
+
+.media-icons a:nth-child(2) {
+  background: #1da1f2;
+}
+
+.media-icons a:nth-child(3) {
+  background: #e1306c;
+}
+
+.media-icons a:nth-child(4) {
+  background: #0077b5;
+}
+
+.media-icons a:nth-child(5) {
+  background: #ff0000;
+}
+
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-boxes .box {
+  width: calc(100% / 4 - 20px);
+  list-style: none;
+}
+
+.link-boxes .box .link_name {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.link-boxes .box .link_name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+
+.link-boxes .box li {
+  margin: 10px 0;
+}
+
+.link-boxes .box li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.link-boxes .box li a:hover {
+  color: #fff;
+}
+
+.bottom-details {
+  width: 100%;
+  background: #2c303a;
+  padding: 20px 0;
+}
+
+.bottom-text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-text span,
+.bottom-text a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .link-boxes .box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .link-boxes .box {
+    width: 100%;
+  }
+
+  .bottom-text {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
